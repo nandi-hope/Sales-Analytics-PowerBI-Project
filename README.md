@@ -63,11 +63,11 @@ Raw sales data was first cleaned and prepared in Excel to ensure consistency and
 The cleaned dataset was imported into **MySQL**, where complex queries were executed to extract business insights.
 
 **Database Setup**
-```sql
+sql
 CREATE DATABASE sales_analysis;
 USE sales_analysis;
 
-Sample Table Creation
+*Sample Table Creation*
 
 CREATE TABLE cleaned_sales_dataset1 (
   OrderID INT,
@@ -80,36 +80,36 @@ CREATE TABLE cleaned_sales_dataset1 (
   Revenue INT
 );
 
-Key Analytical Queries
+**Key Analytical Queries**
 
-🔹 1. Top-Selling Product
+*🔹 1. Top-Selling Product*
 
 SELECT Product, SUM(Revenue) AS TotalRevenue
 FROM cleaned_sales_dataset1
 GROUP BY Product
 ORDER BY TotalRevenue DESC;
 
-🔹 2. Regional Sales Performance
+*🔹 2. Regional Sales Performance*
 
 SELECT Region, SUM(Revenue) AS TotalRevenue
 FROM cleaned_sales_dataset1
 GROUP BY Region
 ORDER BY TotalRevenue DESC;
 
-🔹 3. Monthly Sales Trend
+*🔹 3. Monthly Sales Trend*
 
 SELECT DATE_FORMAT(OrderDate, '%Y-%m') AS Month, SUM(Revenue) AS MonthlyRevenue
 FROM cleaned_sales_dataset1
 GROUP BY Month
 ORDER BY Month;
 
-🔹 4. Channel-wise Comparison
+*🔹 4. Channel-wise Comparison*
 
 SELECT SalesChannel, SUM(Revenue) AS TotalRevenue
 FROM cleaned_sales_dataset1
 GROUP BY SalesChannel;
 
-SQL Insight Highlights
+**SQL Insight Highlights**
 
 North region contributed 30.4% of total revenue
 
@@ -121,19 +121,19 @@ Sales peaked in March and April
 
 ---
 
-📊 Step 3: Data Visualization (Power BI)
+## 📊 Step 3: Data Visualization (Power BI)
 
 The processed data was connected to Power BI for visualization and storytelling.
 
-🖼 Dashboard Overview
+**🖼 Dashboard Overview**
 
-🔢 DAX Measures Used
+**🔢 DAX Measures Used**
 
 Total Revenue = SUM(cleaned_sales_dataset1[Revenue])
 Total Orders = DISTINCTCOUNT(cleaned_sales_dataset1[OrderID])
 Avg Order Value = DIVIDE([Total Revenue], [Total Orders])
 
-📈 Visuals Included
+**📈 Visuals Included**
 
 | Visual                  | Purpose                                                |
 | ----------------------- | ------------------------------------------------------ |
