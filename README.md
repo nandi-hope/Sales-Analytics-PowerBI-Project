@@ -64,12 +64,12 @@ The cleaned dataset was imported into **MySQL**, where complex queries were exec
 
 **Database Setup**
 sql
-CREATE DATABASE sales_analysis;
-USE sales_analysis;
+'CREATE DATABASE sales_analysis;'
+'USE sales_analysis;'
 
 *Sample Table Creation*
 
-CREATE TABLE cleaned_sales_dataset1 (
+'CREATE TABLE cleaned_sales_dataset1 (
   OrderID INT,
   OrderDate DATE,
   Product VARCHAR(50),
@@ -78,7 +78,7 @@ CREATE TABLE cleaned_sales_dataset1 (
   UnitPrice INT,
   Quantity INT,
   Revenue INT
-);
+);'
 
 **Key Analytical Queries**
 
