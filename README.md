@@ -59,18 +59,22 @@ Raw sales data was first cleaned and prepared in Excel to ensure consistency and
 
 ---
 
-## 🧮 Step 2: Data Analysis (SQL)
-The cleaned dataset was imported into **MySQL**, where complex queries were executed to extract business insights.
+🧮 Step 2: Data Analysis (SQL)
 
-**Database Setup**
+This section covers how the cleaned dataset was analyzed in MySQL Workbench to generate key business insights.
 
-sql
--`CREATE DATABASE sales_analysis;`
--`USE sales_analysis;`
+2.1 Database Setup
 
-*Sample Table Creation*
+Database Creation:
+The analysis begins with creating a new database named sales_analysis.
 
--`CREATE TABLE cleaned_sales_dataset1 (
+Table Creation:
+A table cleaned_sales_dataset1 is created to store sales transaction records including order details, region, channel, and revenue.
+
+CREATE DATABASE sales_analysis;
+USE sales_analysis;
+
+CREATE TABLE cleaned_sales_dataset1 (
   OrderID INT,
   OrderDate DATE,
   Product VARCHAR(50),
@@ -79,48 +83,122 @@ sql
   UnitPrice INT,
   Quantity INT,
   Revenue INT
-);`
+);
 
-**Key Analytical Queries**
 
-*🔹 1. Top-Selling Product*
+📸 Result:
+
+
+2.2 Data Exploration & Cleaning
+
+1️⃣ Record Count:
+Determine total number of records in the dataset.
+
+SELECT COUNT(*) AS TotalRecords FROM cleaned_sales_dataset1;
+
+
+2️⃣ Distinct Products:
+Find out how many unique products exist in the dataset.
+
+SELECT COUNT(DISTINCT Product) AS TotalProducts FROM cleaned_sales_dataset1;
+
+
+3️⃣ Check for Missing Values:
+Identify any records with missing critical data.
+
+SELECT * 
+FROM cleaned_sales_dataset1
+WHERE Product IS NULL 
+   OR Region IS NULL 
+   OR Revenue IS NULL;
+
+
+4️⃣ Revenue Validation:
+Ensure that revenue equals Quantity * UnitPrice.
+
+SELECT OrderID, Product, Quantity, UnitPrice, Revenue
+FROM cleaned_sales_dataset1
+WHERE Revenue <> (Quantity * UnitPrice);
+
+
+📸 Result:
+
+
+2.3 Analytical Queries
+🔹 1. Top-Selling Product
+
+Identify which products generated the highest total revenue.
 
 SELECT Product, SUM(Revenue) AS TotalRevenue
 FROM cleaned_sales_dataset1
 GROUP BY Product
 ORDER BY TotalRevenue DESC;
 
-*🔹 2. Regional Sales Performance*
+
+📸 Result:
+
+
+🔹 2. Revenue by Region
+
+Determine which region performed best in terms of sales revenue.
 
 SELECT Region, SUM(Revenue) AS TotalRevenue
 FROM cleaned_sales_dataset1
 GROUP BY Region
 ORDER BY TotalRevenue DESC;
 
-*🔹 3. Monthly Sales Trend*
 
-SELECT DATE_FORMAT(OrderDate, '%Y-%m') AS Month, SUM(Revenue) AS MonthlyRevenue
+📸 Result:
+
+
+🔹 3. Monthly Sales Trend
+
+Analyze monthly sales performance to identify growth patterns and seasonality.
+
+SELECT DATE_FORMAT(OrderDate, '%Y-%m') AS Month, 
+       SUM(Revenue) AS MonthlyRevenue
 FROM cleaned_sales_dataset1
 GROUP BY Month
 ORDER BY Month;
 
-*🔹 4. Channel-wise Comparison*
+
+📸 Result:
+
+
+🔹 4. Online vs Retail Channel Performance
+
+Compare total revenue between Online and Retail channels.
 
 SELECT SalesChannel, SUM(Revenue) AS TotalRevenue
 FROM cleaned_sales_dataset1
 GROUP BY SalesChannel;
 
-**SQL Insight Highlights**
 
-North region contributed 30.4% of total revenue
+📸 Result:
 
-Laptops were the top-selling product
 
-Online and Retail channels performed almost equally
+🔹 5. Best Region for Each Product
 
-Sales peaked in March and April
+Find which region generates the most revenue for each product.
 
----
+SELECT Product, Region, SUM(Revenue) AS TotalRevenue
+FROM cleaned_sales_dataset1
+GROUP BY Product, Region
+ORDER BY Product, TotalRevenue DESC;
+
+
+📸 Result:
+
+
+2.4 SQL Insights Summary
+Insight	Finding
+💻 Top Product	Laptops generated the highest revenue overall
+🌍 Top Region	North region contributed ~30% of total revenue
+🛒 Channel Comparison	Online slightly outperformed Retail
+🗓️ Best Months	February to April had peak revenue
+📉 Data Quality	No major null or inconsistent revenue values found
+
+✅ Next Step: Go to Step 3 → Power BI Visualization
 
 ## 📊 Step 3: Data Visualization (Power BI)
 
