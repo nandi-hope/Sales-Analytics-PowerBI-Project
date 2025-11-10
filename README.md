@@ -119,6 +119,8 @@ Online and Retail channels performed almost equally
 
 Sales peaked in March and April
 
+---
+
 📊 Step 3: Data Visualization (Power BI)
 
 The processed data was connected to Power BI for visualization and storytelling.
