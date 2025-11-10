@@ -63,13 +63,14 @@ Raw sales data was first cleaned and prepared in Excel to ensure consistency and
 The cleaned dataset was imported into **MySQL**, where complex queries were executed to extract business insights.
 
 **Database Setup**
+
 sql
-`CREATE DATABASE sales_analysis;`
-`USE sales_analysis;`
+-`CREATE DATABASE sales_analysis;`
+-`USE sales_analysis;`
 
 *Sample Table Creation*
 
-`CREATE TABLE cleaned_sales_dataset1 (
+-`CREATE TABLE cleaned_sales_dataset1 (
   OrderID INT,
   OrderDate DATE,
   Product VARCHAR(50),
