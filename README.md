@@ -21,12 +21,17 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 
 ---
 
-File: sales_dataset.csv
-Description: Contains transaction-level sales data including:
+## 📂 Project Files
 
-OrderID, OrderDate, Product, Region, SalesChannel, UnitPrice, Quantity, Revenue
+| File | Description |
+|------|-------------|
+| `sales_dataset.csv` | Raw dataset (500 rows) cleaned in Excel |
+| `analysis_queries.sql` | SQL scripts used for analysis |
+| `Sales_Analytics_Dashboard.pbix` | Power BI dashboard file |
+| `dashboard_preview.png` | Dashboard screenshot |
 
 ---
+
 
 ## 🚀 Steps Performed
 
@@ -38,11 +43,11 @@ OrderID, OrderDate, Product, Region, SalesChannel, UnitPrice, Quantity, Revenue
 ### 2️⃣ Data Analysis (MySQL Workbench)
 Created database & imported dataset:
 
-sql
-CREATE DATABASE sales_analysis;
-USE sales_analysis;
+**sql**
 
----
+```CREATE DATABASE sales_analysis;
+```USE sales_analysis;
+
 
 ### 🧹 Step 1 — Data Cleaning (Excel)
 
