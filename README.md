@@ -36,7 +36,7 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 
 
 
-## 🧩 Step 1 — Data Cleaning (Excel)
+## 🧩 Step 1  Data Cleaning (Excel)
 
 ### - Tasks Performed
 **Objective:** Prepare clean and structured data for SQL import.
@@ -60,7 +60,7 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 
 Saved cleaned data as ```sales_data.csv```.
 
-### - Snapshot of Cleaning Steps
+###  Snapshot of Cleaning Steps
 
 | Task | Excel Feature Used |
 |------|--------------------|
@@ -72,9 +72,9 @@ Saved cleaned data as ```sales_data.csv```.
 ---
 
 
-## 🧮 Step 2 — SQL Analysis (MySQL)
+## 🧮 Step 2  SQL Analysis (MySQL)
 
-### - Database Creation
+###  Database Creation
 
 
 ```
@@ -83,7 +83,7 @@ CREATE DATABASE sales_analysis;
 USE sales_analysis;
 ```
 
-### - Table Creation
+###  Table Creation
 
 ```
 sql
