@@ -136,7 +136,7 @@ GROUP BY Product
 ORDER BY TotalRevenue DESC;
 ```
 **Output:**
-![Dashboard Preview](images/dashboard_preview.png)
+![Output Preview](images/dashboard_preview.png)
 
 **2️⃣ Revenue by Region**
 ```
@@ -147,7 +147,7 @@ GROUP BY Region
 ORDER BY TotalRevenue DESC;
 ```
 **Output:**
-![output Preview](Revenue by Region.png)
+![output Preview](Top-Selling Product.png)
 
 **3️⃣ Monthly Revenue Trend**
 ```
