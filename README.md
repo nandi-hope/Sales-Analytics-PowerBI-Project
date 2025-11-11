@@ -308,9 +308,9 @@ GitHub Repo: Sales Analytics Power BI Project
 **Nandini Jella**
 
 ## 🧩 Connect With Me
-🔗 [LinkedIn](https://linkedin.com/in/nandini-jella-a8262b1a0)  
-📧 Email: nandinijella0095@gmail.com
-📂 [My Portfolio](https://github.com/nandi-hope)
+- 🔗 [LinkedIn](https://linkedin.com/in/nandini-jella-a8262b1a0)  
+- 📧 Email: nandinijella0095@gmail.com
+- 📂 [My Portfolio](https://github.com/nandi-hope)
 
 
 
