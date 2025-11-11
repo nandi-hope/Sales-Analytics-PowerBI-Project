@@ -35,18 +35,19 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 ## 🧩 Step 1 — Data Cleaning (Excel)
 
 ### Tasks Performed
-1. Imported raw sales data and checked for:
-   - Missing values  
-   - Duplicates  
-   - Incorrect date and number formats
-2. Created new calculated columns:
-   - `Revenue = UnitPrice * Quantity`
-   - `Profit = Revenue * 0.2` (assumed 20% margin)
-3. Used Pivot Tables for early insights:
-   - Revenue by Region  
-   - Product Performance  
-   - Monthly Sales Trends
-4. Exported final cleaned dataset to CSV (`sales_dataset.csv`).
+**Objective:** Prepare clean and structured data for SQL import.
+
+**Steps:**
+**1.Opened dataset **(> sales_dataset.csv) → Saved as > sales_data.xlsx
+**2.Checked for missing values** using conditional formatting (none found)
+**3.Removed duplicates** using > Data → Remove Duplicates
+**4.Added calculated field:**
+   - **Profit** = > Revenue * 0.2 > (assuming 20% margin)
+**5.Performed quick EDA using Pivot Tables:**
+   - Revenue by Region
+   - Top Product by Revenue
+   - Monthly Revenue Trend
+Saved cleaned data as sales_data.csv.
 
 ### Snapshot of Cleaning Steps
 | Task | Excel Feature Used |
