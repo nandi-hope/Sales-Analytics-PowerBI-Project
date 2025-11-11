@@ -32,65 +32,48 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 
 ---
 
+## 🧩 Step 1 — Data Cleaning (Excel)
 
-## 🚀 Steps Performed
+### Tasks Performed
+1. Imported raw sales data and checked for:
+   - Missing values  
+   - Duplicates  
+   - Incorrect date and number formats
+2. Created new calculated columns:
+   - `Revenue = UnitPrice * Quantity`
+   - `Profit = Revenue * 0.2` (assumed 20% margin)
+3. Used Pivot Tables for early insights:
+   - Revenue by Region  
+   - Product Performance  
+   - Monthly Sales Trends
+4. Exported final cleaned dataset to CSV (`sales_dataset.csv`).
 
-### 1️⃣ Data Collection & Cleaning (Excel)
-- Removed blanks & duplicates
-- Standardized date & revenue formats
-- Exported final dataset to CSV
+### Snapshot of Cleaning Steps
+| Task | Excel Feature Used |
+|------|--------------------|
+| Removing Duplicates | Data → Remove Duplicates |
+| Formatting Dates | Format Cells → Date |
+| Calculating Revenue | Formula: `=UnitPrice * Quantity` |
+| Exploratory Pivot Charts | Insert → Pivot Table |
 
-### 2️⃣ Data Analysis (MySQL Workbench)
-Created database & imported dataset:
-
-**sql**
-
-```CREATE DATABASE sales_analysis;
-```USE sales_analysis;
+---
 
 
-### 🧹 Step 1 — Data Cleaning (Excel)
+## 🧮 Step 2 — SQL Analysis (MySQL)
 
-Objective: Prepare clean and structured data for SQL import.
+### Database Creation
 
-Steps:
 
-Opened dataset (sales_dataset.csv) → Saved as sales_data.xlsx
-
-Checked for missing values using conditional formatting (none found)
-
-Removed duplicates using Data → Remove Duplicates
-
-Added calculated field:
-
-Profit = Revenue * 0.2 (assuming 20% margin)
-
-Performed quick EDA using Pivot Tables:
-
-Revenue by Region
-
-Top Product by Revenue
-
-Monthly Revenue Trend
-
-Saved cleaned data as sales_data.csv.
-
-### 🧮 Step 2 — SQL Analysis (MySQL)
-
-Objective: Load data into SQL and generate insights through queries.
-
-Steps:
-
-Steps:
-
-Create Database
-
+```
+sql
 CREATE DATABASE sales_analysis;
 USE sales_analysis;
+```
 
+**Table Creation**
 
-Create Table
-
+```
+sql
 CREATE TABLE sales_data (
   OrderID INT,
   OrderDate DATE,
@@ -102,25 +85,79 @@ CREATE TABLE sales_data (
   Revenue INT,
   Profit INT
 );
+```
 
+**Data Import**
+Loaded the cleaned CSV into MySQL using:
 
-Import Data via MySQL Workbench → Data Import Wizard
+👉 To IMPORT CSV into MySQL:
 
-Verify Import
+In MySQL Workbench, on the left panel (Schemas area).
 
+Right-click your database (sales_analysis)
+
+Select Table Data Import Wizard
+
+Select CSV file (sales_data.csv)
+
+Click Next
+
+**Choose:**
+
+"Create new table"
+
+Table name: sales_data
+
+Click Next → Next → Finish
+
+```
 SHOW TABLES;
 SELECT * FROM sales_data LIMIT 10;
+```
 
-🔎 Key SQL Queries
-Business Question	SQL Query
-Top-performing product (Revenue)	SELECT Product, SUM(Revenue) AS TotalRevenue FROM sales_data GROUP BY Product ORDER BY TotalRevenue DESC;
-Revenue by Region	SELECT Region, SUM(Revenue) AS TotalRevenue FROM sales_data GROUP BY Region;
-Monthly Revenue Trend	SELECT DATE_FORMAT(OrderDate, '%Y-%m') AS Month, SUM(Revenue) AS MonthlyRevenue FROM sales_data GROUP BY Month;
-Online vs Retail performance	SELECT SalesChannel, SUM(Revenue) AS TotalRevenue FROM sales_data GROUP BY SalesChannel;
-Best Region per Product	SELECT Product, Region, SUM(Revenue) AS TotalRevenue FROM sales_data GROUP BY Product, Region ORDER BY Product, TotalRevenue DESC;
+**Key Analytical Queries**
+**1️⃣ Top-Selling Product**
+```
+sql
+SELECT Product, SUM(Revenue) AS TotalRevenue
+FROM sales_data
+GROUP BY Product
+ORDER BY TotalRevenue DESC;
+```
+**2️⃣ Revenue by Region**
+```
+sql
+SELECT Region, SUM(Revenue) AS TotalRevenue
+FROM sales_data
+GROUP BY Region
+ORDER BY TotalRevenue DESC;
+```
+**3️⃣ Monthly Revenue Trend**
+```
+sql
+SELECT DATE_FORMAT(OrderDate, '%Y-%m') AS Month, SUM(Revenue) AS MonthlyRevenue
+FROM sales_data
+GROUP BY Month
+ORDER BY Month;
+```
+**4️⃣ Online vs Retail Performance**
+```
+sql
+SELECT SalesChannel, SUM(Revenue) AS TotalRevenue
+FROM sales_data
+GROUP BY SalesChannel;
+```
+**5️⃣ Best Region per Product**
+```
+sql
+SELECT Product, Region, SUM(Revenue) AS TotalRevenue
+FROM sales_data
+GROUP BY Product, Region
+ORDER BY Product, TotalRevenue DESC;
+```
 
-### 📊 Step 3 — Power BI Dashboard
-
+### 📊 Step 3 — Visualization (Power BI Dashboard)
+**Dashboard Overview**
 Objective: Create an interactive, business-ready dashboard.
 
 Steps:
@@ -184,6 +221,16 @@ Integrate with Power BI Service for live dashboards
 | **Slicers**             | Filter by Product and Region                           |
 | **Drillthrough Page**   | View order-level details for selected products         |
 | **Tooltips**            | Hover-level details for better data exploration        |
+
+### 🧠 Insights from Dashboard
+
+**North region** generated the highest revenue share (~30%).
+
+**Monitors and Laptops** are top-selling products.
+
+**Online and Retail** channels perform almost equally (~$0.99M each).
+
+**Revenue peaked** during **March and April**, indicating seasonal demand.
 
 ---
 
