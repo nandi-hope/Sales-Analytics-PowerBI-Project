@@ -2,7 +2,7 @@
 
 ![Dashboard Preview](dashboard_preview.png)
 
-### 📊 End-to-End Data Analytics Project
+## 📊 End-to-End Data Analytics Project
 
 This project demonstrates a complete **data analytics workflow** using **Excel**, **MySQL**, and** Power BI** to analyze and visualize sales performance data.
 
@@ -10,7 +10,7 @@ It covers data cleaning, SQL-based analysis, and interactive Power BI dashboards
 
 
 
-### 🚀 Project Overview
+## 🚀 Project Overview
 
 **Goal:**
 To analyze company sales data and create an interactive Power BI dashboard that highlights revenue trends, product performance, and regional sales distribution.
@@ -76,7 +76,7 @@ Saved cleaned data as ```sales_data.csv```.
 
 ## 🧮 Step 2 — SQL Analysis (MySQL)
 
-## Database Creation
+### Database Creation
 
 
 ```
@@ -85,7 +85,7 @@ CREATE DATABASE sales_analysis;
 USE sales_analysis;
 ```
 
-## Table Creation
+### Table Creation
 
 ```
 sql
@@ -129,6 +129,7 @@ Click Next → Next → Finish
 SHOW TABLES;
 SELECT * FROM sales_data LIMIT 10;
 ```
+![output Preview](sales_data_table.png)
 
 ## Key Analytical Queries
 
