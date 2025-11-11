@@ -200,11 +200,13 @@ Connected Power BI to MySQL Database
 
 ### Created DAX Measures:
 
+```
 Total Revenue = SUM(Query1[Revenue])
 Total Quantity = SUM(Query1[Quantity])
 Total Orders = DISTINCTCOUNT(Query1[OrderID])
 Avg Order Value = DIVIDE([Total Revenue], [Total Orders])
 Average Unit Price = DIVIDE([Total Revenue], [Total Quantity])
+```
 
 **📈 Visuals Included**
 
