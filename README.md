@@ -1,4 +1,8 @@
 # 🧠 Sales Performance Dashboard — Excel | SQL | Power BI
+![Excel](https://img.shields.io/badge/Tool-Excel-green?logo=microsoftexcel)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql)
+![PowerBI](https://img.shields.io/badge/Visualization-Power%20BI-yellow?logo=powerbi)
+![GitHub](https://img.shields.io/badge/Platform-GitHub-black?logo=github)
 
 ![Dashboard Preview](dashboard_preview.png)
 
@@ -9,6 +13,16 @@ This project demonstrates a complete **data analytics workflow** using **Excel**
 
 
 ## 🚀 Project Overview
+### 🚀 Quick Project Summary
+- **Objective:** Analyze sales performance and uncover actionable insights across regions, products, and sales channels.  
+- **Tools:** Excel · SQL · Power BI  
+- **Key Deliverables:** Cleaned dataset, SQL insights, and interactive dashboard  
+- **Highlights:**
+  - Top-performing product: **Monitor**
+  - Highest revenue region: **North**
+  - Online channel slightly outperformed retail
+  - Total revenue analyzed: **$1.95M**
+
 
 **Goal:**
 To analyze company sales data and create an interactive Power BI dashboard that highlights revenue trends, product performance, and regional sales distribution.
@@ -293,11 +307,12 @@ GitHub Repo: Sales Analytics Power BI Project
 ## 🧑‍💻 Author
 **Nandini Jella**
 
+## 🧩 Connect With Me
+🔗 [LinkedIn](https://linkedin.com/in/nandini-jella-a8262b1a0)  
 📧 Email: nandinijella0095@gmail.com
+📂 [My Portfolio](https://github.com/nandi-hope)
 
-🔗 www.linkedin.com/in/nandini-jella-a8262b1a0
 
-🔗 https://github.com/nandi-hope/Sales-Analytics-PowerBI-Project
 
 
 
