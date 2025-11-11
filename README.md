@@ -47,13 +47,11 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 
 **4.Added calculated field:**
    - **Profit** = ``` Revenue * 0.2 ``` (assuming 20% margin)
-   - 
 **5.Performed quick EDA using Pivot Tables:**
 
    - Revenue by Region
    - Top Product by Revenue
    - Monthly Revenue Trend
-   - 
 Saved cleaned data as ```sales_data.csv```.
 
 ### Snapshot of Cleaning Steps
