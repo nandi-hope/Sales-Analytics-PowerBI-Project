@@ -4,12 +4,14 @@
 
 ### 📊 End-to-End Data Analytics Project
 
-This project demonstrates a complete data analytics workflow using Excel, MySQL, and Power BI to analyze and visualize sales performance data.
+This project demonstrates a complete **data analytics workflow** using **Excel**, **MySQL**, and** Power BI** to analyze and visualize sales performance data.
 It covers data cleaning, SQL-based analysis, and interactive Power BI dashboards for business insights.
+
+---
 
 ### 🚀 Project Overview
 
-Goal:
+**Goal:**
 To analyze company sales data and create an interactive Power BI dashboard that highlights revenue trends, product performance, and regional sales distribution.
 
 ---
@@ -212,16 +214,16 @@ Average Unit Price = DIVIDE([Total Revenue], [Total Quantity])
 
 **📈 Dashboard Visuals**
 
-| Visual                       | Type         | Insights                                                                            |
-| ---------------------------- | -------------------- | --------------------------------------------------------------------------- |
-| 💵 **KPI Cards**             | Card                | Total Revenue, Total Quantity, Average Order Value                           |
-| 📅 **Monthly Revenue Trend** | Line Chart          | Seasonal and monthly performance trends                                      |
-| 🌍 **Revenue by Region**     | Donut Chart         | Regional contribution to total revenue                                       |
-| 🎯 **Revenue by Product**    | Bar Chart           | Top-performing products                                                      |
-| 🛒 **Online vs Retail**      | Column Chart        | Compare revenue by sales channel                                             |
-| 🎛️ **Slicers**               | Filter              | Region and Product filters for interactivity                                 |
-| **Drillthrough Page**        | Detailed Page View  | View detailed order-level insights for selected products or regions           |
-| **Tooltips**                 | Hover Interaction   | Display additional context (e.g., Quantity, Sales Channel) when hovering      |
+| Visual                           | Type                | Insights                                                                            |
+| ------------------------------- | -------------------- | --------------------------------------------------------------------------- |
+| 💵 **KPI Cards**               | Card                | Total Revenue, Total Quantity, Average Order Value                           |
+| 📅 **Monthly Revenue Trend**   | Line Chart          | Seasonal and monthly performance trends                                      |
+| 🌍 **Revenue by Region**       | Donut Chart         | Regional contribution to total revenue                                       |
+| 🎯 **Revenue by Product**      | Bar Chart           | Top-performing products                                                      |
+| 🛒 **Online vs Retail**        | Column Chart        | Compare revenue by sales channel                                             |
+| 🎛️ **Slicers**                 | Filter              | Region and Product filters for interactivity                                 |
+| 🔍**Drillthrough Page**        | Detailed Page View  | View detailed order-level insights for selected products or regions           |
+| 💡**Tooltips**                 | Hover Interaction   | Display additional context (e.g., Quantity, Sales Channel) when hovering      |
 
 ---
 
@@ -235,47 +237,41 @@ Average Unit Price = DIVIDE([Total Revenue], [Total Quantity])
 
 **Revenue peaked** during **March and April**, indicating seasonal demand.
 
-
-📷 Dashboard Preview
-
-## 🏁 Conclusion
-
-This project showcases a full Data Analytics workflow — from data cleaning in Excel, SQL-based data analysis, to interactive visualization in Power BI.
-It can easily be adapted for business reporting, sales tracking, and data-driven decision making.
-
-## 💡 Future Enhancements
-
-Automate data refresh between MySQL and Power BI
-
-Add profit margin analysis & forecasting
-
-Integrate with Power BI Service for live dashboards
-
 ---
 
 ## 💡 Key Insights
 
-💻 Laptops generated the highest revenue, indicating strong demand.
+- 💻 Laptops generated the highest revenue, indicating strong demand.
 
-🌍 North region dominated sales, contributing nearly one-third of total revenue.
+- 🌍 North region dominated sales, contributing nearly one-third of total revenue.
 
-🛒 Online sales slightly outperformed Retail channels.
+- 🛒 Online sales slightly outperformed Retail channels.
 
-🗓️ Highest revenue months: February to April.
+- 🗓️ Highest revenue months: February to April.
 
-📊 Sales began stabilizing toward the end of the year.
+- 📊 Sales began stabilizing toward the end of the year.
+
+---
+
+![Dashboard Preview](dashboard_preview.png)
+
+---
+## 🏁 Conclusion
+
+This project showcases a full **Data Analytics workflow** — from** data cleaning in Excel**, **SQL-based data analysis**, to **interactive visualization in Power BI**.
+It can easily be adapted for **business reporting**, **sales tracking**, and **data-driven decision making**.
 
 ---
 
 ## 🧭 Learning Outcomes
 
-Developed a structured workflow combining Excel → SQL → Power BI.
+- Developed a structured workflow combining Excel → SQL → Power BI.
 
-Practiced data transformation and DAX measure creation.
+- Practiced data transformation and DAX measure creation.
 
-Designed an interactive Power BI dashboard that supports drillthrough and tooltips.
+- Designed an interactive Power BI dashboard that supports drillthrough and tooltips.
 
-Strengthened understanding of data storytelling and business KPIs.
+- Strengthened understanding of data storytelling and business KPIs.
 
 ---
 
@@ -295,9 +291,9 @@ Refresh the data connection and explore visuals
 
 GitHub Repo: Sales Analytics Power BI Project
 
-### 👤 Author
+### 🧑‍💻 Author
+**Nandini Jella**
 
-Nandi Hope
 📧 Email: nandinijella0095@gmail.com
 
 🔗 www.linkedin.com/in/nandini-jella-a8262b1a0
