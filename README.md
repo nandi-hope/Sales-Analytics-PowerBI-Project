@@ -1,4 +1,7 @@
 # 🧠 Sales Performance Dashboard — Excel | SQL | Power BI
+
+![Dashboard Preview](dashboard_preview.png)
+
 ### 📊 End-to-End Data Analytics Project
 
 This project demonstrates a complete data analytics workflow using Excel, MySQL, and Power BI to analyze and visualize sales performance data.
@@ -163,6 +166,7 @@ FROM sales_data
 GROUP BY Product, Region
 ORDER BY Product, TotalRevenue DESC;
 ```
+---
 
 ### 📊 Step 3 — Visualization (Power BI Dashboard)
 **Dashboard Overview**
@@ -172,7 +176,7 @@ Steps:
 
 Connected Power BI to MySQL Database
 
-Get Data → MySQL → Server: localhost, Database: sales_analysis
+**Get Data → MySQL → Server: localhost, Database: sales_analysis**
 
 ### Created DAX Measures:
 
@@ -182,23 +186,30 @@ Total Orders = DISTINCTCOUNT(Query1[OrderID])
 Avg Order Value = DIVIDE([Total Revenue], [Total Orders])
 Average Unit Price = DIVIDE([Total Revenue], [Total Quantity])
 
-### 📈 Dashboard Visuals
-Visual	Type	Insights
-💵 KPI Cards	Card	Total Revenue, Total Quantity, Average Order Value
-📅 Monthly Revenue Trend	Line Chart	Seasonal and monthly performance trends
-🌍 Revenue by Region	Donut Chart	Regional contribution to total revenue
-🎯 Revenue by Product	Bar Chart	Top-performing products
-🛒 Online vs Retail	Column Chart	Compare revenue by sales channel
-🎛️ Slicers	Filter	Region and Product filters for interactivity
-🧠 Insights from Dashboard
+**📈 Visuals Included**
 
-North region generated the highest revenue share (~30%).
+| Visual                  | Purpose                                                |
+| ----------------------- | ------------------------------------------------------ |
+| **KPI Cards**           | Show Total Revenue, Quantity Sold, and Avg Order Value |
+| **Line Chart**          | Monthly revenue trend                                  |
+| **Bar Chart**           | Product-wise performance                               |
+| **Donut Chart**         | Region-wise revenue distribution                       |
+| **Clustered Bar Chart** | Online vs Retail comparison                            |
+| **Slicers**             | Filter by Product and Region                           |
+| **Drillthrough Page**   | View order-level details for selected products         |
+| **Tooltips**            | Hover-level details for better data exploration        |
 
-Monitors and Laptops are top-selling products.
+---
+### 🧠 Insights from Dashboard
 
-Online and Retail channels perform almost equally (~$0.99M each).
+**North region** generated the highest revenue share (~30%).
 
-Revenue peaked during March and April, indicating seasonal demand.
+**Monitors and Laptops** are top-selling products.
+
+**Online and Retail** channels perform almost equally (~$0.99M each).
+
+**Revenue peaked** during **March and April**, indicating seasonal demand.
+
 
 📷 Dashboard Preview
 
@@ -214,31 +225,6 @@ Automate data refresh between MySQL and Power BI
 Add profit margin analysis & forecasting
 
 Integrate with Power BI Service for live dashboards
-
-
-
-**📈 Visuals Included**
-
-| Visual                  | Purpose                                                |
-| ----------------------- | ------------------------------------------------------ |
-| **KPI Cards**           | Show Total Revenue, Quantity Sold, and Avg Order Value |
-| **Line Chart**          | Monthly revenue trend                                  |
-| **Bar Chart**           | Product-wise performance                               |
-| **Donut Chart**         | Region-wise revenue distribution                       |
-| **Clustered Bar Chart** | Online vs Retail comparison                            |
-| **Slicers**             | Filter by Product and Region                           |
-| **Drillthrough Page**   | View order-level details for selected products         |
-| **Tooltips**            | Hover-level details for better data exploration        |
-
-### 🧠 Insights from Dashboard
-
-**North region** generated the highest revenue share (~30%).
-
-**Monitors and Laptops** are top-selling products.
-
-**Online and Retail** channels perform almost equally (~$0.99M each).
-
-**Revenue peaked** during **March and April**, indicating seasonal demand.
 
 ---
 
