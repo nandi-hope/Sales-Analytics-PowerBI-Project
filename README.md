@@ -9,6 +9,19 @@ It covers data cleaning, SQL-based analysis, and interactive Power BI dashboards
 Goal:
 To analyze company sales data and create an interactive Power BI dashboard that highlights revenue trends, product performance, and regional sales distribution.
 
+---
+
+## 🧰 Tools Used
+| Tool | Purpose |
+|------|---------|
+| Excel | Data cleaning, formatting, CSV conversion |
+| MySQL | Data storage, SQL queries & insights |
+| Power BI | Dashboard building & visualization |
+| GitHub | Version control and project documentation |
+
+---
+
+
 Tools Used:
 
 🧾 Microsoft Excel — Data cleaning & preparation
