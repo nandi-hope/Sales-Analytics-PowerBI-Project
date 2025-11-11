@@ -38,9 +38,9 @@ OrderID, OrderDate, Product, Region, SalesChannel, UnitPrice, Quantity, Revenue
 ### 2️⃣ Data Analysis (MySQL Workbench)
 Created database & imported dataset:
 
-```sql
+sql
 CREATE DATABASE sales_analysis;
-USE sales_analysis;```
+USE sales_analysis;
 
 ---
 
