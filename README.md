@@ -136,7 +136,7 @@ GROUP BY Product
 ORDER BY TotalRevenue DESC;
 ```
 **Output:**
-![Top-Selling Products Output](images/Top Selling%20Product.png)
+![Top-Selling Products Output](images/Top_Selling_Product.png)
 
 **2️⃣ Revenue by Region**
 ```
@@ -147,7 +147,7 @@ GROUP BY Region
 ORDER BY TotalRevenue DESC;
 ```
 **Output:**
-![output Preview](Top-Selling Product.png)
+![output Preview](Revenue_by_Region.png)
 
 **3️⃣ Monthly Revenue Trend**
 ```
@@ -158,7 +158,7 @@ GROUP BY Month
 ORDER BY Month;
 ```
 **Output:**
-![output Preview](Monthly Revenue Trend.png)
+![output Preview](Monthly_Revenue_Trend.png)
 
 **4️⃣ Online vs Retail Performance**
 ```
@@ -168,7 +168,7 @@ FROM sales_data
 GROUP BY SalesChannel;
 ```
 **Output:**
-![output Preview](Online vs Retail Performance.png)
+![output Preview](Online_vs_Retail_Performance.png)
 
 **5️⃣ Best Region per Product**
 ```
@@ -179,7 +179,7 @@ GROUP BY Product, Region
 ORDER BY Product, TotalRevenue DESC;
 ```
 **Output:**
-![output Preview](Best Region per Product.png)
+![output Preview](Best_Region_per_Product.png)
 
 ---
 
