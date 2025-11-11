@@ -4,9 +4,7 @@
 
 ## 📊 End-to-End Data Analytics Project
 
-This project demonstrates a complete **data analytics workflow** using **Excel**, **MySQL**, and** Power BI** to analyze and visualize sales performance data.
-
-It covers data cleaning, SQL-based analysis, and interactive Power BI dashboards for business insights.
+This project demonstrates a complete **data analytics workflow** using **Excel**, **MySQL**, and** Power BI** to analyze and visualize sales performance data.                                                    It covers data cleaning, SQL-based analysis, and interactive Power BI dashboards for business insights.
 
 
 
@@ -40,7 +38,7 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 
 ## 🧩 Step 1 — Data Cleaning (Excel)
 
-### Tasks Performed
+### - Tasks Performed
 **Objective:** Prepare clean and structured data for SQL import.
 
 **Steps:**
@@ -62,7 +60,7 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 
 Saved cleaned data as ```sales_data.csv```.
 
-### Snapshot of Cleaning Steps
+### - Snapshot of Cleaning Steps
 
 | Task | Excel Feature Used |
 |------|--------------------|
@@ -76,7 +74,7 @@ Saved cleaned data as ```sales_data.csv```.
 
 ## 🧮 Step 2 — SQL Analysis (MySQL)
 
-### Database Creation
+### - Database Creation
 
 
 ```
@@ -85,7 +83,7 @@ CREATE DATABASE sales_analysis;
 USE sales_analysis;
 ```
 
-### Table Creation
+### - Table Creation
 
 ```
 sql
@@ -260,9 +258,7 @@ Average Unit Price = DIVIDE([Total Revenue], [Total Quantity])
 
 ## 🏁 Conclusion
 
-This project showcases a full **Data Analytics workflow** — from** data cleaning in Excel**, **SQL-based data analysis**, to **interactive visualization in Power BI**.
-
-It can easily be adapted for **business reporting**, **sales tracking**, and **data-driven decision making**.
+This project showcases a full **Data Analytics workflow** — from** data cleaning in Excel**, **SQL-based data analysis**, to **interactive visualization in Power BI**.                                           It can easily be adapted for **business reporting**, **sales tracking**, and **data-driven decision making**.
 
 
 
