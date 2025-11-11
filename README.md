@@ -21,21 +21,26 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 
 ---
 
-
-Tools Used:
-
-🧾 Microsoft Excel — Data cleaning & preparation
-
-🗃️ MySQL — Data storage & SQL analysis
-
-📈 Power BI — Data visualization & dashboard creation
-
-📂 Dataset
-
 File: sales_dataset.csv
 Description: Contains transaction-level sales data including:
 
 OrderID, OrderDate, Product, Region, SalesChannel, UnitPrice, Quantity, Revenue
+
+---
+
+## 🚀 Steps Performed
+
+### 1️⃣ Data Collection & Cleaning (Excel)
+- Removed blanks & duplicates
+- Standardized date & revenue formats
+- Exported final dataset to CSV
+
+### 2️⃣ Data Analysis (MySQL Workbench)
+Created database & imported dataset:
+
+```sql
+CREATE DATABASE sales_analysis;
+USE sales_analysis;
 
 🧹 Step 1 — Data Cleaning (Excel)
 
