@@ -135,6 +135,9 @@ FROM sales_data
 GROUP BY Product
 ORDER BY TotalRevenue DESC;
 ```
+**Output:**
+![output Preview](Top-Selling Product.png)
+
 **2️⃣ Revenue by Region**
 ```
 sql
@@ -143,6 +146,9 @@ FROM sales_data
 GROUP BY Region
 ORDER BY TotalRevenue DESC;
 ```
+**Output:**
+![output Preview](Revenue by Region.png)
+
 **3️⃣ Monthly Revenue Trend**
 ```
 sql
@@ -151,6 +157,9 @@ FROM sales_data
 GROUP BY Month
 ORDER BY Month;
 ```
+**Output:**
+![output Preview](Monthly Revenue Trend.png)
+
 **4️⃣ Online vs Retail Performance**
 ```
 sql
@@ -158,6 +167,9 @@ SELECT SalesChannel, SUM(Revenue) AS TotalRevenue
 FROM sales_data
 GROUP BY SalesChannel;
 ```
+**Output:**
+![output Preview](Online vs Retail Performance.png)
+
 **5️⃣ Best Region per Product**
 ```
 sql
@@ -166,6 +178,9 @@ FROM sales_data
 GROUP BY Product, Region
 ORDER BY Product, TotalRevenue DESC;
 ```
+**Output:**
+![output Preview](Best Region per Product.png)
+
 ---
 
 ### 📊 Step 3 — Visualization (Power BI Dashboard)
