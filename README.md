@@ -38,11 +38,12 @@ To analyze company sales data and create an interactive Power BI dashboard that 
 **Objective:** Prepare clean and structured data for SQL import.
 
 **Steps:**
-**1.Opened dataset **(> sales_dataset.csv) → Saved as > sales_data.xlsx
+
+**1.Opened dataset** (``` sales_dataset.csv ```) → Saved as ``` sales_data.xlsx ```
 **2.Checked for missing values** using conditional formatting (none found)
-**3.Removed duplicates** using > Data → Remove Duplicates
+**3.Removed duplicates** using ```Data → Remove Duplicates```
 **4.Added calculated field:**
-   - **Profit** = > Revenue * 0.2 > (assuming 20% margin)
+   - **Profit** = ``` Revenue * 0.2 ``` (assuming 20% margin)
 **5.Performed quick EDA using Pivot Tables:**
    - Revenue by Region
    - Top Product by Revenue
