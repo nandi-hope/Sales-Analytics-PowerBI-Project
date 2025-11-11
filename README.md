@@ -190,13 +190,13 @@ ORDER BY Product, TotalRevenue DESC;
 
 ### 📊 Step 3 — Visualization (Power BI Dashboard)
 **Dashboard Overview**
-Objective: Create an interactive, business-ready dashboard.
+**1. Objective:** Create an interactive, business-ready dashboard.
 
-Steps:
+**Steps:**
 
-Connected Power BI to MySQL Database
+**2.Connected Power BI to MySQL Database**
 
-**Get Data → MySQL → Server: localhost, Database: sales_analysis**
+Get Data → MySQL → Server: localhost, Database: sales_analysis
 
 ### Created DAX Measures:
 
@@ -208,20 +208,23 @@ Avg Order Value = DIVIDE([Total Revenue], [Total Orders])
 Average Unit Price = DIVIDE([Total Revenue], [Total Quantity])
 ```
 
-**📈 Visuals Included**
+---
 
-| Visual                  | Purpose                                                |
-| ----------------------- | ------------------------------------------------------ |
-| **KPI Cards**           | Show Total Revenue, Quantity Sold, and Avg Order Value |
-| **Line Chart**          | Monthly revenue trend                                  |
-| **Bar Chart**           | Product-wise performance                               |
-| **Donut Chart**         | Region-wise revenue distribution                       |
-| **Clustered Bar Chart** | Online vs Retail comparison                            |
-| **Slicers**             | Filter by Product and Region                           |
-| **Drillthrough Page**   | View order-level details for selected products         |
-| **Tooltips**            | Hover-level details for better data exploration        |
+**📈 Dashboard Visuals**
+
+| Visual                       | Type         | Insights                                                                            |
+| ---------------------------- | -------------------- | --------------------------------------------------------------------------- |
+| 💵 **KPI Cards**             | Card                | Total Revenue, Total Quantity, Average Order Value                           |
+| 📅 **Monthly Revenue Trend** | Line Chart          | Seasonal and monthly performance trends                                      |
+| 🌍 **Revenue by Region**     | Donut Chart         | Regional contribution to total revenue                                       |
+| 🎯 **Revenue by Product**    | Bar Chart           | Top-performing products                                                      |
+| 🛒 **Online vs Retail**      | Column Chart        | Compare revenue by sales channel                                             |
+| 🎛️ **Slicers**               | Filter              | Region and Product filters for interactivity                                 |
+| **Drillthrough Page**        | Detailed Page View  | View detailed order-level insights for selected products or regions           |
+| **Tooltips**                 | Hover Interaction   | Display additional context (e.g., Quantity, Sales Channel) when hovering      |
 
 ---
+
 ### 🧠 Insights from Dashboard
 
 **North region** generated the highest revenue share (~30%).
