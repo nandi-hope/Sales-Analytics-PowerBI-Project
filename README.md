@@ -91,16 +91,14 @@ Saved cleaned data as ```sales_data.csv```.
 ###  Database Creation
 
 
-```
-sql
+```sql
 CREATE DATABASE sales_analysis;
 USE sales_analysis;
 ```
 
 ###  Table Creation
 
-```
-sql
+```sql
 CREATE TABLE sales_data (
   OrderID INT,
   OrderDate DATE,
@@ -146,8 +144,7 @@ SELECT * FROM sales_data LIMIT 10;
 ## Key Analytical Queries
 
 **1️⃣ Top-Selling Product**
-```
-sql
+```sql
 SELECT Product, SUM(Revenue) AS TotalRevenue
 FROM sales_data
 GROUP BY Product
@@ -158,8 +155,7 @@ ORDER BY TotalRevenue DESC;
 ![output Preview](Top_Selling_Product.png)
 
 **2️⃣ Revenue by Region**
-```
-sql
+```sql
 SELECT Region, SUM(Revenue) AS TotalRevenue
 FROM sales_data
 GROUP BY Region
@@ -170,8 +166,7 @@ ORDER BY TotalRevenue DESC;
 ![output Preview](Revenue_by_Region.png)
 
 **3️⃣ Monthly Revenue Trend**
-```
-sql
+```sql
 SELECT DATE_FORMAT(OrderDate, '%Y-%m') AS Month, SUM(Revenue) AS MonthlyRevenue
 FROM sales_data
 GROUP BY Month
@@ -182,8 +177,7 @@ ORDER BY Month;
 ![output Preview](Monthly_Revenue_Trend.png)
 
 **4️⃣ Online vs Retail Performance**
-```
-sql
+```sql
 SELECT SalesChannel, SUM(Revenue) AS TotalRevenue
 FROM sales_data
 GROUP BY SalesChannel;
@@ -193,8 +187,7 @@ GROUP BY SalesChannel;
 ![output Preview](Online_vs_Retail_Performance.png)
 
 **5️⃣ Best Region per Product**
-```
-sql
+```sql
 SELECT Product, Region, SUM(Revenue) AS TotalRevenue
 FROM sales_data
 GROUP BY Product, Region
